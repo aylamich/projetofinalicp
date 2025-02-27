@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "projeto5_backend": {
+      "main": "src/projeto5_backend/main.mo",
+      "type": "motoko"
+    },
+    "projeto5_frontend": {
+      "dependencies": [
+        "projeto5_backend"
+      ],
+      "source": [
+        "src/projeto5_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "projeto5_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
